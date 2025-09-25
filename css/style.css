@@ -1,0 +1,115 @@
+:root {
+  --primary-main: #266d47;  
+  --primary-main2: #00391a;  
+  --primary-yellow: #ffff00;  
+  --secondary-blue: #B7CBD0;  
+  --secondary-green: #3D4E3E;  
+  --secondary-grey: #e6e6e6; 
+  --text-black: #181D27; 
+}   
+a{
+  text-decoration: none !important; 
+}
+a:hover{
+  text-decoration: none;
+} 
+body{
+  font-family: "Prompt", sans-serif;
+  font-style: normal; 
+  overflow-x: hidden !important;
+}     
+nav.navbar{
+  background-color: var(--primary-main2) !important;
+  height: 60px;
+}
+.navbar-brand img{
+  height: 100px;
+} 
+nav.navbar .navbar-nav .nav-item{
+  color: white; 
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 0.3s; 
+}
+nav.navbar .navbar-nav .nav-item.active{
+  border-bottom: 4px solid var(--primary-yellow);
+}
+nav.navbar .navbar-nav .nav-item:hover{
+  border-bottom: 4px solid var(--primary-yellow);
+}
+nav.navbar .navbar-nav .nav-item .nav-link{
+  color: white;
+}
+nav.navbar .navbar-nav .nav-item.active .nav-link{
+  font-weight: bold; 
+}
+nav.navbar .nav-item.d-flex{
+  border-bottom: 4px solid transparent !important;
+} 
+nav.navbar .nav-item.d-flex:hover{
+  border-bottom: 4px solid transparent !important;
+}
+.langx .active{
+  font-weight: bold;  
+}
+.th, .en { display: none; }  
+.sec-social{ 
+  height: 60px;
+  background-color: var(--secondary-grey);
+  margin-top: 60px;
+} 
+.sec-social ul{ 
+  display: flex;
+  list-style: none;
+  padding-left: 0px; 
+  align-content: center;
+  height: 60px;
+  width: 100% !important; 
+  text-align: center;
+  justify-content: center;
+}
+.sec-social ul li{ 
+  margin-left: 10px;
+  margin-right: 15px;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+.sec-social ul li img{   
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin-right: 5px;
+} 
+.sec-social ul li a{
+  font-weight: bold;
+  transition: 0.3s;
+  color: var(--text-black);  
+}
+.sec-social ul li:hover a{ 
+  color: var(--primary-main);  
+}
+.sec-carousel .carousel-caption{
+  height: 55%;
+  color: var(--primary-main2);
+}
+
+
+/*  
+  font-family: "Chivo", sans-serif; 
+######################################################################################################
+###################################################################################################### 
+*/ 
+ 
+
+@media only screen and (max-width: 1024px) { /* MOBILE */
+  .mb-x{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) { /* PC */
+  .pc-x{
+    display: none !important;
+  }      
+}      
