@@ -21,6 +21,7 @@
   
 	<link href="css/style.css" rel="stylesheet">     
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 
 </head>
@@ -198,12 +199,18 @@
 					<div class="col-lg-6">
 						<div class="des">
 							<div>
-								บริษัท พี สตาร์ กรุ๊ป จำกัด 
+								<h4>บริษัท พี สตาร์ กรุ๊ป จำกัด </h4>
 
-								ก่อตั้งขึ้นตั้งแต่ปี พ.ศ. 2540 เราคือผู้เชี่ยวชาญด้าน
-								งานก่อสร้างและการปรับปรุงอาคารแบบครบวงจร ครอบคลุมตั้งแต่ โรงงาน คลังสินค้า อาคารสำนักงาน โรงเรียน อพาร์ตเมนต์ บ้านพักอาศัย ไปจนถึงศูนย์ดูแลผู้สูงอายุ
-
-								ด้วยประสบการณ์ยาวนานกว่า 20 ปี เราสั่งสมทั้งความรู้ ความชำนาญ และมาตรฐานการทำงานที่พิถีพิถัน โดยมี ทีมสถาปนิก วิศวกร และช่างผู้เชี่ยวชาญ คอยดูแลอย่างใกล้ชิดในทุกขั้นตอน ตั้งแต่การออกแบบ การก่อสร้าง จนถึงการส่งมอบงานที่มีคุณภาพได้มาตรฐาน แข็งแรง ทันสมัย และตอบโจทย์ความต้องการของลูกค้าได้อย่างแท้จริง
+								<p>
+									ก่อตั้งขึ้นตั้งแต่ปี พ.ศ. 2540 เราคือผู้เชี่ยวชาญด้าน <br>
+									งานก่อสร้างและการปรับปรุงอาคารแบบครบวงจร  <br>
+									 ครอบคลุมตั้งแต่ <span> โรงงาน คลังสินค้า  <br>
+									 อาคารสำนักงาน โรงเรียน อพาร์ตเมนต์ บ้านพักอาศัย ไปจนถึงศูนย์ดูแลผู้สูงอายุ </span>
+								</p>
+								<br>
+								<a href="#" class="btn">
+									ข้อมูลบริษัท
+								</a>
 							</div>
 						</div>
 					</div>
@@ -212,6 +219,60 @@
 		</section>
 		<section class="sec4">
 			<div class="container-fluid">
+				<h3>ทุกโครงการคือผลงานคุณภาพจากเรา</h3>
+				<p>Delivering quality in every project</p>
+				
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper"> 
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item01.png);">
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item02.png);">
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item03.png);">
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item04.png);">
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item05.png);">
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item01.png);">
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item02.png);">
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="xquality" style="background-image: url(images/item03.png);">
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- ปุ่มเลื่อนซ้าย/ขวา -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+					<!-- ถ้าต้องการจุด pagination ให้เปิด -->
+					<div class="swiper-pagination"></div>
+				</div>
 				
 			</div>
 		</section>
@@ -225,6 +286,7 @@
 	<script src="js/popper.min.js" ></script>
 	<script src="js/bootstrap.bundle.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 	<script> 
 		function setLanguage(lang) {
@@ -247,10 +309,21 @@
 		});
 	</script>
 	<script>
-	 
-		AOS.init({
-		  duration: 1000, // Animation duration in milliseconds
-		  once: false  // Only animate once
+		const swiper = new Swiper('.mySwiper', {
+			slidesPerView: 5,       // แสดงทีละ 5
+			spaceBetween: 12,
+			navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+			}, 
+			loop: false,
+			breakpoints: {      
+				0:   { slidesPerView: 1 },
+				576: { slidesPerView: 2 },
+				768: { slidesPerView: 3 },
+				992: { slidesPerView: 4 },
+				1200:{ slidesPerView: 5 }
+			}
 		});
 	</script>
 	

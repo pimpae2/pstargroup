@@ -91,8 +91,17 @@ nav.navbar .nav-item.d-flex:hover{
   color: var(--primary-main);  
 }
 .sec-carousel .carousel-caption{
-  height: 55%;
+  height: 60%;
   color: var(--primary-main2);
+}
+.sec-carousel .carousel-caption h3{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.sec-carousel .carousel-caption p{
+  font-size: 20px;
+  font-weight: bold;
 }
 .sec-carousel .carousel-indicators button{
   width: 50px;
@@ -183,6 +192,38 @@ nav.navbar .nav-item.d-flex:hover{
   font-size: 24px;
   color: white; 
 } 
+.sec3 .des{
+  display: flex;
+  min-height: 600px;
+  align-items: center;
+  max-width: 350px;
+  margin-left: 20%;
+  color: #fff;
+}
+.sec3 h4{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sec3 p{
+  font-size: 16px;
+}
+.sec3 p span{
+  font-weight: bold;
+} 
+.sec3 .btn{
+  border-radius: 0px;
+  border: 1px solid var(--primary-yellow);
+  background-color: transparent !important;
+  color: white;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sec3 .btn:hover{  
+  border: 1px solid var(--primary-yellow);
+  background-color: var(--primary-yellow) !important;
+  color: black;
+}
 .sec4{
   background-color: white;
   padding-top: 50px;
@@ -199,16 +240,29 @@ nav.navbar .nav-item.d-flex:hover{
   color: var(--primary-main);
   text-align: center;
   font-weight: bold;
+} 
+
+ 
+.swiper-slide { 
+  display:flex;
+  justify-content:center;
+  align-items:center;  
 }
-.sec3 .des{
-  display: flex;
-  min-height: 600px;
-  align-items: center;
-  max-width: 330px;
+.swiper-button-next, .swiper-button-prev {
+  background:#fff; 
+  color:#000; 
+  border-radius:50%;
+  width:44px; 
+  height:44px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}  
+
+.xquality{
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size:  100% auto !important; 
+  min-height: 350px;
 }
-
-
-
 
 /*  
   font-family: "Chivo", sans-serif; 
