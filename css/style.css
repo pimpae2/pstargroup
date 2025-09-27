@@ -15,8 +15,7 @@ a:hover{
 } 
 body{
   font-family: "Prompt", sans-serif;
-  font-style: normal; 
-  overflow-x: hidden !important;
+  font-style: normal;  
 }     
 nav.navbar{
   background-color: var(--primary-main2) !important;
@@ -561,6 +560,14 @@ footer h4{
   font-weight: bold;
   color: white;
 }
+footer h6{
+  font-size: 14px; 
+  color: white;
+}
+footer h6 span{  
+  color: #999999;
+}
+
 
 
 
