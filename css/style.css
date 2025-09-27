@@ -38,6 +38,7 @@ nav.navbar .navbar-nav .nav-item:hover{
 }
 nav.navbar .navbar-nav .nav-item .nav-link{
   color: white;
+  font-size: 16px;
 }
 nav.navbar .navbar-nav .nav-item.active .nav-link{
   font-weight: bold; 
@@ -48,21 +49,24 @@ nav.navbar .nav-item.d-flex{
 nav.navbar .nav-item.d-flex:hover{
   border-bottom: 4px solid transparent !important;
 }
+nav.navbar .container{
+  height: 60px;
+}
 .langx .active{
   font-weight: bold;  
 }
 .th, .en { display: none; }  
 .sec-social{ 
-  height: 60px;
+  height: 50px;
   background-color: var(--secondary-grey);
-  margin-top: 60px;
+  margin-top: 50px;
 } 
 .sec-social ul{ 
   display: flex;
   list-style: none;
   padding-left: 0px; 
   align-content: center;
-  height: 60px;
+  height: 50px;
   width: 100% !important; 
   text-align: center;
   justify-content: center;
@@ -72,12 +76,12 @@ nav.navbar .nav-item.d-flex:hover{
   margin-right: 15px;
   text-align: center;
   align-content: center;
-  margin-bottom: 5px;
-  margin-right: 15px;
+  margin-bottom: 5px; 
+  padding-top: 10px;
 }
 .sec-social ul li img{   
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   object-fit: cover;
   margin-right: 5px;
 } 
@@ -90,23 +94,50 @@ nav.navbar .nav-item.d-flex:hover{
   color: var(--primary-main);  
 }
 .sec-carousel .carousel-caption{
-  height: 60%;
+  height: 40%;
   color: var(--primary-main2);
 }
 .sec-carousel .carousel-caption h3{
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 40px;
+  z-index: 5;
+}
+.sec-carousel{
+  position: relative; 
+}
+.sec-carousel::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(
+    to top, 
+    rgba(255, 255, 255, 0.9), 
+    rgba(255, 255, 255, 0.6), 
+    rgba(255, 255, 255, 0)
+  ); 
+  z-index: 4;
+}
+
+.sec-carousel .carousel-caption { 
+  z-index: 15 !important;
 }
 .sec-carousel .carousel-caption p{
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bold; 
+}
+.sec-carousel .carousel-indicators{
+  z-index: 22 !important; 
 }
 .sec-carousel .carousel-indicators button{
   width: 50px;
   opacity: 1;
   height: 3px;
   background-color: var(--primary-main);
+  z-index: 5;
 }
 .sec-carousel .carousel-indicators button.active{
   height: 7px;
@@ -122,13 +153,13 @@ nav.navbar .nav-item.d-flex:hover{
   padding-bottom: 50px;
 }
 .sec2 h3{
-  font-size: 44px;
+  font-size: 32px;
   color: var(--primary-main);
   text-align: center; 
   font-weight: bold;
 }
 .sec2 p{
-  font-size: 24px;
+  font-size: 16px;
   color: var(--primary-main);
   text-align: center;
   font-weight: bold;
@@ -171,8 +202,8 @@ nav.navbar .nav-item.d-flex:hover{
   right: 0 !important;
   left: 0 !important;
   display: flex;
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
   border-radius: 100%;
   margin: auto;
   display: flex;
@@ -180,7 +211,7 @@ nav.navbar .nav-item.d-flex:hover{
   align-items: center;
 } 
 .abucir h3{
-  font-size: 38px;
+  font-size: 32px;
   color: white;
   text-align: center; 
   font-weight: bold;
@@ -188,7 +219,7 @@ nav.navbar .nav-item.d-flex:hover{
   padding-top: 20px;
 }
 .abucir h3 span{
-  font-size: 24px;
+  font-size: 18px;
   color: white; 
 } 
 .sec3 .des{
@@ -229,7 +260,7 @@ nav.navbar .nav-item.d-flex:hover{
   padding-bottom: 100px;
 }
 .sec4 h3{
-  font-size: 44px;
+  font-size: 32px;
   color: var(--primary-main);
   text-align: center; 
   font-weight: bold;
@@ -237,7 +268,7 @@ nav.navbar .nav-item.d-flex:hover{
   line-height: 30px;
 }
 .sec4 p{
-  font-size: 20px;
+  font-size: 18px;
   color: var(--primary-main);
   text-align: center;
   font-weight: bold;
@@ -326,7 +357,7 @@ nav.navbar .nav-item.d-flex:hover{
   padding-bottom: 100px;
 }
 .sec5 h3{
-  font-size: 44px;
+  font-size: 32px;
   color: white;
   text-align: center; 
   font-weight: bold;
@@ -334,7 +365,7 @@ nav.navbar .nav-item.d-flex:hover{
   line-height: 30px;
 }
 .sec5 p{
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -383,7 +414,7 @@ nav.navbar .nav-item.d-flex:hover{
 }
 .conf h3{
   color: var(--primary-main);
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 0px;
 }
@@ -432,7 +463,7 @@ address{
 }
 .formf h3{
   color: white;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 0px;
 }
@@ -568,14 +599,7 @@ footer h6 span{
   color: #999999;
 }
 
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -590,6 +614,125 @@ footer h6 span{
 @media only screen and (max-width: 1024px) { /* MOBILE */
   .mb-x{
     display: none !important;
+  }
+  .navbar-brand img {
+    height: 90px;
+    margin-top: -25px;
+  } 
+  nav.navbar { 
+    height: 80px;
+  }
+  .navbar-toggler{
+    color: white;
+    margin-top: -15px;
+  }
+  .navbar-collapse.show{
+    background-color: var(--primary-main2);
+    padding: 10px;
+  }
+  .sec-social { 
+    margin-top: 80px;
+  }
+  .sec-social ul{ 
+    flex-wrap: wrap;  
+    height: 100px;
+  }
+  .sec-social ul li{
+    font-size: 11px;
+  }
+  .sec-social{
+    height: 100px;
+  }
+  .sec-carousel img{
+    height: 400px;
+    object-fit: cover;
+  }
+  .sec-carousel::after { 
+    height: 80%; 
+  } 
+  .sec-carousel .carousel-caption { 
+    height: 60%; 
+  } 
+  .sec-carousel .carousel-caption h3 {
+    font-size: 32px; 
+  }
+  .sec-carousel .carousel-caption p {
+    font-size: 14px; 
+  }
+  .sec-carousel .carousel-indicators {
+    right: 0 !important; 
+  }
+  .sec2 h3 {
+    font-size: 32px; 
+  }
+  .hook{
+    display: none;
+  }
+  .sec2 p {
+    font-size: 16px; 
+  }
+  .sec3 .row .col-lg-6:nth-child(1){
+    min-height: 400px;
+  }
+  .sec3 .row .col-lg-6:nth-child(2){
+    min-height: 400px;
+  }
+  .abucir{
+    width: 150px;
+    height: 150px; 
+  }
+  .sec3 .des {
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    max-width: 80%;
+    margin-left: 10%;
+    color: #fff;
+  }
+  .abucir h3{
+    font-size: 24px;
+  }
+  .abucir h3 span{
+    font-size: 16px;
+  }
+  .sec3 h4 { 
+    margin-top: 90px;
+  }
+  .sec3 .btn { 
+    margin-top: 0px !important;
+  }
+  .sec3 p {
+    font-size: 14px;
+  }
+  .sec4 h3{
+    font-size: 32px;
+  }
+  .sec4 p{
+    font-size: 16px;
+  }
+  .swiper-slide {  
+    width: 100% !important; 
+  }
+  .swiper-button-prev{
+    left: 11% !important; 
+    opacity: 1;
+  }  
+  .swiper-button-next{
+    right: 11% !important; 
+  }   
+  .sec5 h3 {
+    font-size: 32px; 
+  }
+  .sec5 p {
+    font-size: 16px; 
+  }
+  footer .flogo{
+    display: block;
+    margin: 10px auto 20px;
+  }
+  .fsocial{
+    margin-left: 30px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 768px) { /* PC */
