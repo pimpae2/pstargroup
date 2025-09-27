@@ -391,7 +391,8 @@ nav.navbar .nav-item.d-flex:hover{
 .conf p{
   color: var(--primary-main);
   font-size: 20px; 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 address{
   font-size: 16px;
@@ -440,6 +441,7 @@ address{
   color: white;
   font-size: 20px; 
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .formf h5{
   color: white;
@@ -493,6 +495,76 @@ address{
   border: 1px solid white;
   background-color: white !important; 
 }
+.mmap{
+  position: relative;
+}
+.mmap::after{
+  content: "";
+  position: absolute;
+  border: 2px solid var(--primary-main);
+  height: 430px;
+  width: 100%;
+  left: -20px;
+  top: 20px;
+  z-index: 4;
+}
+.map{
+  position: relative;
+  height: 420px;
+  width: 100%;
+  z-index: 14;
+}
+footer{
+  background-color: #666666;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+footer .flogo{
+  height: 60px;
+  margin-bottom: 30px;
+  color: white;
+}
+footer p{ 
+  color: white;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.fsocial{
+  margin-right: 30px;
+  height: 30px;
+  width: auto;
+  object-fit: cover;
+}
+footer hr{
+  border-top: 1px solid white;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
+}
+.lnkx{
+  list-style: none;
+  padding-left: 15px;
+  margin-bottom: 20px;
+} 
+.lnkx li{
+  margin-bottom: 10px;
+}
+.lnkx li a{
+  transition: 0.3s; 
+  color: white;
+  font-size: 14px;
+}
+.lnkx li:hover a{
+  color: var(--primary-yellow);
+}
+footer h4{
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+
 
 
 
