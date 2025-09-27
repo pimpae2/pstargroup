@@ -16,6 +16,7 @@ a:hover{
 body{
   font-family: "Prompt", sans-serif;
   font-style: normal;  
+  overflow-x: hidden !important;
 }     
 nav.navbar{
   background-color: var(--primary-main2) !important;
@@ -209,6 +210,7 @@ nav.navbar .container{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 12;
 } 
 .abucir h3{
   font-size: 32px;
