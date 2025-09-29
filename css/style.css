@@ -600,8 +600,55 @@ footer h6{
 footer h6 span{  
   color: #999999;
 }
+.sec-cover{
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important; 
+  height: 300px;
+  background-image: url(../images/ab.png);
+  margin-top: 60px;
+} 
+.sec-cover .container-fluid > div{
+  display: flex;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.sec-cover .container-fluid > div > div{ 
+  width: 100%;
+}
+.sec-cover .container-fluid h3{ 
+  width: 100%;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 30px;
+}
+.sec-cover .container-fluid h3 span{  
+  font-size: 20px; 
+  color: #fff;
+} 
+.sec-ab1{  
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;  
+  background-image: url(../images/planx.png); 
+}
+.sec-ab1 h4{  
+  color: var(--primary-main);
+  font-weight: bold;
+  margin-right: 10px;
+}
+.sec-ab1 p{  
+  font-size: 16px;
+} 
+.sec-ab1 p span{   
+  font-weight: bold;
+}
 
- 
 
 
 
