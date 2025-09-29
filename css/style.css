@@ -632,7 +632,7 @@ footer h6 span{
 .sec-ab1{  
   padding-top: 50px;
   padding-bottom: 50px;
-  background-position: center !important;
+  background-position: top right !important;
   background-repeat: no-repeat !important;
   background-size: 100% !important;  
   background-image: url(../images/planx.png); 
@@ -641,6 +641,7 @@ footer h6 span{
   color: var(--primary-main);
   font-weight: bold;
   margin-right: 10px;
+  font-size: 24px;
 }
 .sec-ab1 p{  
   font-size: 16px;
@@ -648,9 +649,57 @@ footer h6 span{
 .sec-ab1 p span{   
   font-weight: bold;
 }
-
-
-
+.plx{
+  padding-left: 60px;
+}
+.text-vision{
+  position: absolute;
+  top: 15%;
+  z-index: 4;
+  text-align: center;
+  width: 100%;
+}
+.sec-ab1 h5{  
+  color: black;
+  margin-top: 30px;
+  font-weight: bold; 
+  font-size: 20px;
+  line-height: 30px;
+} 
+.h-top{
+  margin-top: 19%;
+  margin-bottom: 20px;
+}
+.mission{
+  list-style: none;
+} 
+.mission li{
+  padding-left: 25px;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 20px;
+}
+.mission li::after{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  width: 38px;
+  height: 38px;
+  background-color: var(--primary-main2);
+}
+.mission li div{ 
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  margin-top: 15px;
+  font-size: 48px;
+  z-index: 5;
+  font-weight: bold; 
+  color: var(--primary-yellow);
+}
+  
+  
 
 /*  
   transition: 0.3s; 
