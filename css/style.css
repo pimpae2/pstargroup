@@ -672,6 +672,9 @@ footer h6 a{
   margin-right: 10px;
   font-size: 24px;
 }
+.sec-ab1 h4.h6{   
+  font-size: 20px;
+}
 .sec-ab1 p{  
   font-size: 16px;
 } 
@@ -690,13 +693,12 @@ footer h6 a{
 }
 .sec-ab1 h5{  
   color: black;
-  margin-top: 30px;
-  font-weight: bold; 
+  margin-top: 30px; 
   font-size: 20px;
   line-height: 30px;
 } 
 .h-top{
-  margin-top: 19%;
+  margin-top: 24%;
   margin-bottom: 20px;
 }
 .mission{
@@ -727,7 +729,11 @@ footer h6 a{
   font-weight: bold; 
   color: var(--primary-yellow);
 }
-  
+.images-del{
+  position: relative;
+  margin-left: -100px;
+  z-index: 4;
+}
   
 
 /*  
@@ -860,6 +866,38 @@ footer h6 a{
   .fsocial{
     margin-left: 30px;
     margin-bottom: 20px;
+  }
+  .addbig .navbar-toggler {
+    color: white;
+    margin-top: -35px;
+  } 
+  .addbig .navbar-brand img {
+    height: 90px;
+    margin-top: -35px;
+  }
+  .img-fluid.d-block.ms-auto{
+    margin-right: auto !important;
+    margin-left: auto !important;
+    margin-bottom: 20px;
+  }
+  .sec-cover { 
+    background-size: auto 100% !important;
+    height: 200px; 
+  }
+  .sec-cover .container-fluid > div { 
+    height: 200px; 
+  }
+  .row.mt-5{
+    margin-top: 20px !important;
+  }
+  .col-lg-6.position-relative img{
+    width: 100%;
+  }
+  .h-top{ 
+    margin-top: 20px;
+  }
+  .images-del{
+    margin-left: 0px;
   }
 }
 @media only screen and (min-width: 768px) { /* PC */
