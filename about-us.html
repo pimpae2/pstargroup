@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>บริษัท พี สตาร์ กรุ๊ป จำกัด รับเหมากอสรางอาคาร อาคาร โรงงาน คลังสินค้า สำนักงาน อพาร์ทเม้นท์ บ้านเดี่ยว บ้านแถว โฮมออฟฟิส โดยทีมงานสถาปนิกและวิศวกรมืออาชีพ </title>
+	<title>บริษัท พี สตาร์ กรุ๊ป จำกัด รับเหมาก่อสร้างอาคาร อาคาร โรงงาน คลังสินค้า สำนักงาน อพาร์ทเม้นท์ บ้านเดี่ยว บ้านแถว โฮมออฟฟิส โดยทีมงานสถาปนิกและวิศวกรมืออาชีพ </title>
 	<link rel="icon" type="image/x-icon" href="images/icon.jpg">
 	<link href="css/bootstrap.min.css" rel="stylesheet">  
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
@@ -27,7 +27,7 @@
 </head>
 <body>     
 	<header>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm addbig">
 			<div class="container">
 				<!-- Logo ด้านซ้าย -->
 				<a class="navbar-brand" href="index.html">
@@ -208,7 +208,7 @@
 					<hr>
 				</div>
 				<div class="col-12">
-					<h6>Copyright © 2025 | P Star Group. <span>by belong-to</span></h6>
+					<h6>Copyright © 2025 | P Star Group. <span><a href="http://www.belongto.com/main/index.html">by belong-to</a></span></h6>
 				</div>
 			</div>
 		</div>
@@ -238,6 +238,15 @@
 				setLanguage(a.dataset.lang);
 			});
 		});
+
+		document.addEventListener("scroll", function () {
+			let navbar = document.querySelector(".navbar");
+			if (window.scrollY > 0) {
+				navbar.classList.remove("addbig");
+			} else {
+				navbar.classList.add("addbig");
+			}
+		}); 
 	</script>
 	<script>
 		AOS.init({
