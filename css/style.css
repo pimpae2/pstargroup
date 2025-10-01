@@ -326,28 +326,48 @@ nav.navbar .container{
 }   
 .swiper-button-next:after{
   content: unset !important;
-}  
-
-.xquality{
+}   
+.xquality {
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-size: 100% !important; 
+  background-size: cover !important; 
   height: 320px;
   position: relative;
+  overflow: hidden;
 }
-.xquality::after{
+
+.xquality::before,
+.xquality::after {
   content: "";
   position: absolute;
-  top: 0;
+  left: 0;
   width: 100%;
-  height: 320px;
-  transition: 0.3s; 
+  height: 50%;
   background-color: rgba(0,0,0,0.6);
+  transition: transform 0.5s ease;
   z-index: 4;
 }
-.xquality:hover:after{
-  background-color: rgba(0,0,0,0.0);
+
+/* อันบนเลื่อนลง */
+.xquality::before {
+  top: 0;
+  transform: translateY(-100%);
 }
+
+/* อันล่างเลื่อนขึ้น */
+.xquality::after {
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+/* เวลา hover ให้เลื่อนเข้ามาชนกลาง */
+.xquality:hover::before {
+  transform: translateY(0);
+}
+.xquality:hover::after {
+  transform: translateY(0);
+}
+
 .xquality .in{ 
   position: absolute;
   top: 0;
