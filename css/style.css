@@ -335,7 +335,7 @@ nav.navbar .container{
   position: relative;
   overflow: hidden;
 }
-
+ 
 .xquality::before,
 .xquality::after {
   content: "";
@@ -347,25 +347,20 @@ nav.navbar .container{
   transition: transform 0.5s ease;
   z-index: 4;
 }
-
-/* อันบนเลื่อนลง */
+ 
 .xquality::before {
   top: 0;
-  transform: translateY(-100%);
+  transform: translateY(0);
 }
-
-/* อันล่างเลื่อนขึ้น */
 .xquality::after {
   bottom: 0;
-  transform: translateY(100%);
-}
-
-/* เวลา hover ให้เลื่อนเข้ามาชนกลาง */
-.xquality:hover::before {
   transform: translateY(0);
+} 
+.xquality:hover::before {
+  transform: translateY(-100%);
 }
 .xquality:hover::after {
-  transform: translateY(0);
+  transform: translateY(100%);
 }
 
 .xquality .in{ 
@@ -417,11 +412,10 @@ nav.navbar .container{
   position: absolute;
   bottom: -90px;
   width: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.7);
   font-size: 16px;
   line-height: 1.5;        
-  color: #fff;
-  font-weight: bold;
+  color: #fff; 
   padding: 10px 15px;
   display: -webkit-box;
   -webkit-line-clamp: 3;     
