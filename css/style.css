@@ -734,7 +734,9 @@ footer h6 a{
   margin-left: -100px;
   z-index: 4;
 }
-  
+.roundedx{
+  border-radius: 100%;
+}
 
 /*  
   transition: 0.3s; 
