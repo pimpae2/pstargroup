@@ -21,21 +21,27 @@ body{
 nav.navbar{
   background-color: var(--primary-main2) !important;
   height: 60px;
+}  
+nav.navbar.addbig{ 
+  height: 80px;
+}
+nav.navbar.addbig .navbar-brand img{
+  height: 120px; 
 }
 .navbar-brand img{
   height: 100px;
 } 
 nav.navbar .navbar-nav .nav-item{
   color: white; 
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   transition: 0.3s; 
 }
 nav.navbar .navbar-nav .nav-item.active{
-  border-bottom: 4px solid var(--primary-yellow);
+  border-bottom: 3px solid var(--primary-yellow);
 }
 nav.navbar .navbar-nav .nav-item:hover{
-  border-bottom: 4px solid var(--primary-yellow);
+  border-bottom: 3px solid var(--primary-yellow);
 }
 nav.navbar .navbar-nav .nav-item .nav-link{
   color: white;
@@ -55,12 +61,13 @@ nav.navbar .container{
 }
 .langx .active{
   font-weight: bold;  
+  color: var(--primary-yellow) !important;
 }
 .th, .en { display: none; }  
 .sec-social{ 
   height: 50px;
   background-color: var(--secondary-grey);
-  margin-top: 50px;
+  margin-top: 80px;
 } 
 .sec-social ul{ 
   display: flex;
@@ -87,19 +94,27 @@ nav.navbar .container{
   margin-right: 5px;
 } 
 .sec-social ul li a{
-  font-weight: bold;
   transition: 0.3s;
   color: var(--text-black);  
 }
 .sec-social ul li:hover a{ 
   color: var(--primary-main);  
+  font-weight: bold;
 }
 .sec-carousel .carousel-caption{
-  height: 40%;
-  color: var(--primary-main2);
+  height: 65%;
+  color: white; 
 }
+/* .sec-carousel .carousel-caption > div{ 
+  background-color: rgba(255,255,255,0.2); 
+  width: 100%;
+  display: block;
+  margin: auto; 
+  padding: 30px 30px 20px;
+  border-radius: 6px; 
+} */
 .sec-carousel .carousel-caption h3{
-  font-size: 40px;
+  font-size: 46px;
   font-weight: bold;
   margin-bottom: 40px;
   z-index: 5;
@@ -112,14 +127,9 @@ nav.navbar .container{
   content: "";
   left: 0;
   bottom: 0;
-  height: 50%;
+  height: 100%;
   width: 100%;
-  background: linear-gradient(
-    to top, 
-    rgba(255, 255, 255, 0.9), 
-    rgba(255, 255, 255, 0.6), 
-    rgba(255, 255, 255, 0)
-  ); 
+  background: rgba(0,0,0,0.2); 
   z-index: 4;
 }
 
@@ -127,7 +137,7 @@ nav.navbar .container{
   z-index: 15 !important;
 }
 .sec-carousel .carousel-caption p{
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold; 
 }
 .sec-carousel .carousel-indicators{
@@ -238,9 +248,11 @@ nav.navbar .container{
 }
 .sec3 p{
   font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
 }
 .sec3 p span{
-  font-weight: bold;
+  font-weight: 500;
 } 
 .btn{
   border-radius: 0px;
@@ -513,7 +525,7 @@ address{
   border-bottom: 1px dotted white;
   color: white;
 }
-.btn{
+.sec6 .btn{
   border-radius: 0px;
   border: 1px solid white;
   background-color: white !important;
@@ -523,7 +535,7 @@ address{
   padding-right: 15px;
   margin-top: 40px;
 }
-.btn:hover{  
+.sec6 .btn:hover{  
   border: 1px solid white;
   background-color: white !important; 
 }
@@ -598,6 +610,9 @@ footer h6{
   color: white;
 }
 footer h6 span{  
+  color: #999999;
+}
+footer h6 a{  
   color: #999999;
 }
 .sec-cover{
