@@ -217,8 +217,7 @@
 						<div class="des">
 							<div>
 								<h4 class="th">บริษัท พี สตาร์ กรุ๊ป จำกัด </h4>
-								<h4 class="en">P Star Group Co.,Ltd </h4>
-								<br><br>
+								<h4 class="en">P Star Group Co., Ltd. </h4> 
 								<p class="th">
 									ก่อตั้งขึ้นตั้งแต่ปี พ.ศ. 2540 เราคือผู้เชี่ยวชาญด้าน <br>
 									งานก่อสร้างและการปรับปรุงอาคารแบบครบวงจร  <br>
@@ -226,12 +225,11 @@
 									  โรงเรียน อพาร์ตเมนต์ บ้านพักอาศัย <br> ไปจนถึงศูนย์ดูแลผู้สูงอายุ </span>
 								</p>
 								<p class="en">
-									Established in 1997, we are a trusted expert in comprehensive construction and building renovation services. Our portfolio spans a wide range of projects including factories, warehouses, office buildings, schools, apartments, residential houses, and elderly care centers.
+									Established in 1997, we are a trusted expert in comprehensive construction and building renovation services. Our portfolio spans a wide range of projects including 
+									<span>factories, warehouses, office buildings, schools, apartments, residential houses, and elderly care centers.</span>
 						 
 								</p>
-								<br>
-								<br>
-								<br>
+								<br> 
 								<a href="#" class="btn">
 									<span class="th">ข้อมูลบริษัท</span>
 									<span class="en">Background</span>
@@ -244,8 +242,10 @@
 		</section>
 		<section class="sec4">
 			<div class="container-fluid p-0">
-				<h3>ทุกโครงการคือ <br> ผลงานคุณภาพจากเรา</h3>
-				<p>Delivering quality in every project</p>
+				<h3 class="th" style="display: block !important;">ทุกโครงการคือ <br> ผลงานคุณภาพจากเรา</h3>
+				<h3 class="en" style="display: block !important;">Delivering quality in every project</h3>
+				<p class="th">Delivering quality in every project</p>
+				<p class="en">ทุกโครงการคือ   ผลงานคุณภาพจากเรา</p>
 				
 				<div class="swiper mySwiper">
 					<div class="swiper-wrapper"> 
@@ -520,7 +520,7 @@
 
 		function setLanguage(lang) {
 			document.querySelectorAll('.th, .en').forEach(el => {
-				el.style.display = el.classList.contains(lang) ? 'inline' : 'none';
+				el.style.display = el.classList.contains(lang) ? 'block' : 'none';
 			});
 
 			document.querySelectorAll('.langx .nav-link').forEach(a => {
