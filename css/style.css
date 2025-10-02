@@ -491,6 +491,7 @@ address{
 }
 .conf ul li a:hover{
   color: var(--primary-main2);
+  font-weight: bold;
 } 
 .formf{
   background-color: var(--primary-main);
