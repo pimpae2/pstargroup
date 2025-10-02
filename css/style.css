@@ -774,9 +774,9 @@ footer h6 a{
 } 
 .sec-news-des h3{
   font-size: 32px;
-  color: var(--primary-main);
-  text-align: center; 
+  color: var(--primary-main); 
   font-weight: bold;
+  margin-bottom: 30px;
 }
 .share-bx{
   display: flex;
@@ -793,7 +793,23 @@ footer h6 a{
   margin-right: 5px;
   margin-top: -10px;
 }
-
+.sec-news-des p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+} 
+.sec-news-des h4{
+  font-size: 22px;
+  color: var(--primary-main);  
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.sec5 h4{
+  font-size: 22px;
+  color: var(--primary-main);  
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
 
 /*  
