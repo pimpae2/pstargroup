@@ -93,7 +93,7 @@ nav.navbar .container{
 }
 .sec-social ul li img{   
   height: 25px;
-  width: 25px;
+  width: auto;
   object-fit: cover;
   margin-right: 5px;
 } 
@@ -548,18 +548,17 @@ address{
   color: white;
 }
 .sec6 .btn{
-  border-radius: 0px;
-  border: 1px solid white;
-  background-color: white !important;
-  color: var(--primary-main2);
+  border-radius: 0px; 
+  color: white;
   font-size: 14px;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 40px;
 }
-.sec6 .btn:hover{  
-  border: 1px solid white;
-  background-color: white !important; 
+.sec6 .btn:hover{   
+  border: 1px solid var(--primary-yellow);
+  background-color: var(--primary-yellow) !important;
+  color: black;
 }
 .mmap{
   position: relative;
