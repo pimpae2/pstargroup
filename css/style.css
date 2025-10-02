@@ -179,6 +179,7 @@ nav.navbar .container{
   text-align: center;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: -5px;
 }
 .sevbox img{
   height: 140px;
@@ -293,8 +294,7 @@ nav.navbar .container{
   color: var(--primary-main);
   text-align: center;
   font-weight: bold;
-  margin-bottom: 60px;
-  margin-top: 10px;
+  margin-bottom: 60px; 
 }  
 .swiper-slide { 
   display:flex;
@@ -601,6 +601,9 @@ footer p{
   width: auto;
   object-fit: cover;
 }
+.fsocial.x{ 
+  height: 25px !important; 
+}
 footer hr{
   border-top: 1px solid white;
   margin-bottom: 20px !important;
@@ -678,9 +681,10 @@ footer h6 a{
   font-weight: bold;
   margin-right: 10px;
   font-size: 24px;
+  margin-top: 30px;
 }
 .sec-ab1 h4.h6{   
-  font-size: 20px;
+  font-size: 18px;
 }
 .sec-ab1 p{  
   font-size: 16px;
