@@ -221,7 +221,7 @@
 	<script> 
 		function setLanguage(lang) {
 			document.querySelectorAll('.th, .en').forEach(el => {
-				el.style.display = el.classList.contains(lang) ? 'inline' : 'none';
+				el.style.display = el.classList.contains(lang) ? 'block' : 'none';
 			});
 
 			document.querySelectorAll('.langx .nav-link').forEach(a => {

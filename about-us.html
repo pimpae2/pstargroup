@@ -196,7 +196,20 @@
 				</div>
 			</div>
 		</section>
-		
+		<section class="team">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-12">
+						<img src="images/img-team.png" class="img-fluid w-75 d-block m-auto" alt="">
+						<br>
+						<h4 class="th">ทีมงาน</h4>
+						<h4 class="en">CORE TEAM</h4>
+						<p class="th">พัฒนาทีมงาน สร้างความสัมพันธ์ที่ยั่งยืน และยกระดับมาตรฐานงานก่อสร้างสู่ความเป็นมืออาชีพ</p>
+						<p class="en">Building strong teams, lasting relationships, and setting the standard in construction excellence.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		
 		 
 	</main>
@@ -267,7 +280,7 @@
 	<script> 
 		function setLanguage(lang) {
 			document.querySelectorAll('.th, .en').forEach(el => {
-				el.style.display = el.classList.contains(lang) ? 'inline' : 'none';
+				el.style.display = el.classList.contains(lang) ? 'block' : 'none';
 			});
 
 			document.querySelectorAll('.langx .nav-link').forEach(a => {

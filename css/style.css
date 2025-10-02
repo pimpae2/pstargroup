@@ -836,7 +836,28 @@ footer h6 a{
   margin-top: 30px;
   margin-bottom: 20px;
 }
+.team{
+  height: 645px;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 100%  !important;  
+  background-image: url(../images/team.png); 
+  padding-top: 100px;
+}
+.team h4{
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.team p{
+  color: white;
+  font-size: 16px;
+  text-align: center;
 
+}
 
 /*  
   transition: 0.3s; 
