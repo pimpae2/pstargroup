@@ -693,6 +693,10 @@ footer h6 a{
 .sec-ab1 h4.h6{   
   font-size: 18px;
 }
+.sec-ab1 h4.h6 a{   
+  font-size: 18px;
+  color: var(--primary-main);
+}
 .sec-ab1 p{  
   font-size: 16px;
 } 
