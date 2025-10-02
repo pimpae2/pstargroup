@@ -490,7 +490,7 @@ address{
   transition: 0.3s; 
 }
 .conf ul li a:hover{
-  color: var(--primary-main2);
+  color: var(--primary-main);
   font-weight: bold;
 } 
 .formf{
@@ -905,6 +905,57 @@ footer h6 a{
   margin-bottom: 30px;
   line-height: 40px;
 }
+
+.check-icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+} 
+.check-icon::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 4px solid var(--primary-main);
+  border-top-color: transparent;   
+  border-radius: 50%;
+  animation: spinToFull 2s linear forwards;  
+}
+ 
+.check-icon i {
+  font-size: 50px;
+  color: var(--primary-main);
+  position: relative;
+  z-index: 2;
+  animation: pop 0.6s ease-in-out;
+}
+
+/* หมุน 3 รอบ แล้วกลายเป็นเต็มวง */
+@keyframes spinToFull {
+  0%   { transform: rotate(0deg); border-top-color: transparent; }
+  90%  { transform: rotate(1080deg); border-top-color: transparent; }  
+  100% { transform: rotate(1080deg); border-top-color: var(--primary-main); }   
+}
+
+@keyframes pop {
+  0%   { transform: scale(0.2); opacity: 0; }
+  50%  { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(1); }
+}
+.modal h5{
+  font-size: 24px;
+  color: #333333;
+}
+.modal h5 span{
+  font-size: 18px;
+  color: #333333;
+}
+
 
 
 /*  

@@ -171,25 +171,25 @@
 					<div class="col-lg-3 col-6">
 						<div class="sevbox">
 							<img src="images/ss01.svg" data-aos-duration="1500" data-aos="flip-left" alt="">
-							<p><span class="th">งานก่อสร้างอาคาร <br> ทุกประเภท</span><span class="en">Construction  <br> of diverse <br> types of buildings.</span></p>
+							<p><span class="th">งานก่อสร้างอาคาร <br> ทุกประเภท<br>&nbsp;</span><span class="en">Construction  <br> of diverse <br> types of buildings.</span></p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-6">
 						<div class="sevbox">
 							<img src="images/ss02.svg" data-aos-duration="1500" data-aos="flip-left" alt="">
-							<p><span class="th">งานปรับปรุง<br>และรีโนเวทอาคาร</span><span class="en">Renovation <br> And refurbishment <br> of buildings. </span></p>
+							<p><span class="th">งานปรับปรุง<br>และรีโนเวทอาคาร<br>&nbsp;</span><span class="en">Renovation <br> And refurbishment <br> of buildings. </span></p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-6">
 						<div class="sevbox">
 							<img src="images/ss03.svg" data-aos-duration="1500" data-aos="flip-left" alt="">
-							<p><span class="th">งานออกแบบทางสถาปัตยกรรม<br>และวิศวกรรม</span><span class="en">Architectural <br> And engineering  <br> design services</span></p>
+							<p><span class="th">งานออกแบบทางสถาปัตยกรรม<br>และวิศวกรรม<br>&nbsp;</span><span class="en">Architectural <br> And engineering  <br> design services</span></p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-6">
 						<div class="sevbox">
 							<img src="images/ss04.svg" data-aos-duration="1500" data-aos="flip-left" alt="">
-							<p><span class="th">บริการดูแลโครงการ <br>แบบครบวงจร</span><span class="en">Comprehensive <br> project management <br> services</span></p>
+							<p><span class="th">บริการดูแลโครงการ <br>แบบครบวงจร<br>&nbsp;</span><span class="en">Comprehensive <br> project management <br> services</span></p>
 						</div>
 					</div>
 				</div>
@@ -431,7 +431,7 @@
 									<input type="text" class="form-control">
 								</div>
 								<div class="col-12 text-center">
-									<button class="btn" type="button">ส่ง / Send</button>
+									<button class="btn" type="button" id="sendBtn">ส่ง / Send</button>
 								</div>
 							</div>
 						</form>
@@ -449,16 +449,16 @@
 						บริษัทที่ปรึกษาบริหารงานก่อสร้างและรับเหมาก่อสร้างครบวงจร <br>
 						ประสบการณ์ด้านวิศวกรรมมากกว่า 20 ปี
 					</p>
-					<a href="#">
+					<a href="tel:081-828 9899">
 						<img src="images/icon-w.svg" alt="" class="fsocial">
 					</a>
-					<a href="#">
+					<a href="mailto:pstargroup@gmail.com">
 						<img src="images/w2.png" alt="" class="fsocial x">
 					</a>
-					<a href="#">
+					<a href="https://www.facebook.com/PstargroupLTD">
 						<img src="images/w3.png" alt="" class="fsocial x">
 					</a>
-					<a href="#">
+					<a href="https://www.instagram.com/pstarhome/">
 						<img src="images/w4.png" alt="" class="fsocial x">
 					</a>
 				</div>
@@ -471,7 +471,7 @@
 								<li><a href="#"><span class="th">ความเป็นมา</span><span class="en">Background</span></a></li>
 								<li><a href="#"><span class="th">วิสัยทัศน์และพันธกิจ</span><span class="en">Mission & Vision</span></a></li> 
 								<li><a href="#"><span class="th">ทีมงาน</span><span class="en">Core Team</span></a></li>  
-								<li><a href="www.pstarhome.com">P Star Home</a></li>
+								<li><a target="_blank" href="https://www.pstargroup.com/">P Star Home</a></li>
 							</ul>
 							<h4><a href="#sec2"><span class="th">บริการของเรา</span><span class="en">What we do</span></a>   </h4> 
 						</div>
@@ -497,6 +497,19 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content text-center p-4"> 
+				<div class="check-icon">
+					<i class="fas fa-check"></i>
+				</div>
+				<h5 class="mt-3">
+					ข้อความจัดส่งแล้ว <br>
+					<span>The message has been sent.</span>
+				</h5>
+			</div>
+		</div>
+	</div>
 
  
 	<script src="js/jquery.min.js"></script> 
@@ -561,6 +574,17 @@
 				992: { slidesPerView: 4 },
 				1200:{ slidesPerView: 5 }
 			}
+		});
+
+		
+		const sendBtn = document.getElementById('sendBtn');
+		const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+		
+		sendBtn.addEventListener('click', () => {
+			successModal.show();
+			setTimeout(() => {
+			successModal.hide();
+			}, 5000); // 5 วินาที
 		});
 	</script>
 	
