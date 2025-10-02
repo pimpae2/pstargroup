@@ -294,7 +294,7 @@ nav.navbar .container{
   align-items:center;  
   margin-right: 0px !important;
   width: 20% !important;
-  height: 280px;
+  height: 260px;
 }
 .swiper-button-next, .swiper-button-prev { 
   color:#000; 
@@ -331,7 +331,7 @@ nav.navbar .container{
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important; 
-  height: 280px;
+  height: 260px;
   position: relative;
   overflow: hidden;
 }
