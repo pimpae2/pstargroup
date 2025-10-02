@@ -680,7 +680,7 @@ footer h6 a{
   color: var(--primary-main);
   font-weight: bold;
   margin-right: 10px;
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 30px;
 }
 .sec-ab1 h4.h6{   
@@ -702,14 +702,17 @@ footer h6 a{
   text-align: center;
   width: 100%;
 }
+.text-vision h4{
+  margin-top: -20px;
+}
 .sec-ab1 h5{  
   color: black;
   margin-top: 30px; 
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 } 
 .h-top{
-  margin-top: 24%;
+  margin-top: 20% !important;
   margin-bottom: 20px;
 }
 .mission{
@@ -719,12 +722,12 @@ footer h6 a{
   padding-left: 25px;
   margin-bottom: 30px;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
 }
 .mission li::after{
   content: "";
   position: absolute;
-  top: 15px;
+  top: 8px;
   left: -30px;
   width: 38px;
   height: 38px;
@@ -733,7 +736,7 @@ footer h6 a{
 .mission li div{ 
   position: absolute;
   left: -25px;
-  top: -25px;
+  top: -30px;
   margin-top: 15px;
   font-size: 48px;
   z-index: 5;
