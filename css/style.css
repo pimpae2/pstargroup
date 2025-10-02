@@ -642,6 +642,7 @@ footer h4:hover a{
 footer h6{
   font-size: 14px; 
   color: white;
+  font-weight: 300;
 }
 footer h6 span{  
   color: #999999;
@@ -783,11 +784,17 @@ footer h6 a{
   margin-right: 10px; 
   transition: 0.3s; 
   color: #333333;
-  font-size: 22px;
+  font-size: 14px;
 }
 .nav-ul li a{
   color: #333333;
-  font-size: 22px;
+  font-size: 14px;
+}
+.nav-ul li a i{ 
+  font-size: 24px !important;
+}
+.nav-ul li a i{ 
+  font-size: 24px !important;
 }
 .nav-ul li.active a{
   color: var(--primary-main2);
@@ -954,6 +961,15 @@ footer h6 a{
 .modal h5 span{
   font-size: 18px;
   color: #333333;
+}
+.sec5 h6 { 
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: end;
+}
+.sec5 h6 a{
+  font-size: 18px;
+  color: #333333; 
 }
 
 
