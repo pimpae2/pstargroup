@@ -629,6 +629,14 @@ footer h4{
   font-weight: bold;
   color: white;
 }
+footer h4 a{
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+footer h4:hover a{
+  color: var(--primary-yellow);
+}
 footer h6{
   font-size: 14px; 
   color: white;
