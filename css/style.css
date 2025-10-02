@@ -238,7 +238,7 @@ nav.navbar .container{
   display: flex;
   min-height: 600px;
   align-items: center;
-  max-width: 350px;
+  max-width: 360px;
   margin-left: 20%;
   color: #fff;
 }
@@ -279,14 +279,15 @@ nav.navbar .container{
   text-align: center; 
   font-weight: bold;
   margin-bottom: 0px;
-  line-height: 30px;
+  line-height: 40px;
 }
 .sec4 p{
   font-size: 18px;
   color: var(--primary-main);
   text-align: center;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  margin-top: 10px;
 }  
 .swiper-slide { 
   display:flex;
@@ -294,7 +295,7 @@ nav.navbar .container{
   align-items:center;  
   margin-right: 0px !important;
   width: 20% !important;
-  height: 260px;
+  height: 320px;
 }
 .swiper-button-next, .swiper-button-prev { 
   color:#000; 
@@ -331,7 +332,7 @@ nav.navbar .container{
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important; 
-  height: 260px;
+  height: 320px;
   position: relative;
   overflow: hidden;
 }
