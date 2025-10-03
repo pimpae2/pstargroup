@@ -77,13 +77,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="sec-ab1">
+		<section class="sec-ab1"> 
+
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6" data-aos="fade-up">
 						<img src="images/ab1.png" class="img-fluid d-block ms-auto" alt="">
 					</div>
-					<div class="col-lg-6 plx">
+					<div class="col-lg-6 plx" data-aos="fade-up">
 						<h4>
 							<span class="th">บริษัท พี สตาร์ กรุ๊ป จำกัด </span>
 							<span class="en">P Star Group Co., Ltd.</span>
@@ -130,7 +131,7 @@
 				</div>
 				<br>
 				<div class="row mt-5">
-					<div class="col-lg-6 position-relative">
+					<div class="col-lg-6 position-relative" data-aos="fade-up">
 						<img src="images/viimg.png" class="img-fluid  " alt=""> 
 						<div class="text-vision">
 							<h4>
@@ -154,7 +155,7 @@
 							</h5>
 						</div>
 					</div>
-					<div class="col-lg-6 plx">
+					<div class="col-lg-6 plx" data-aos="fade-up">
 						<h4 class="h-top"> 
 							<span class="th">พันธกิจ</span>
 							<span class="en">Mission</span>
@@ -199,7 +200,7 @@
 		<section class="team">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-lg-8 col-12">
+					<div class="col-lg-8 col-12 " data-aos="fade-up">
 						<img src="images/img-team.png" class="img-fluid w-75 d-block m-auto" alt="">
 						<br>
 						<h4 class="th">ทีมงาน</h4>
@@ -310,8 +311,11 @@
 		}); 
 	</script>
 	<script>
+		
 		AOS.init({
-		once: false, 
+			duration: 1000,   // ความเร็ว animation
+			easing: 'ease-in-out',
+			once: false       // true = เล่นครั้งเดียว, false = เล่นทุกครั้งที่เลื่อนเจอ
 		}); 
 	</script>
 	

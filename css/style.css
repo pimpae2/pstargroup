@@ -433,6 +433,13 @@ nav.navbar .container{
   max-height: calc(1.5em * 3.5);   
   transition: 0.3s; 
 }
+.sec-news .news-blog .desb{ 
+  -webkit-line-clamp: 2;   /* จำนวนบรรทัดที่จะแสดง */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.5em * 2.5);  
+}
 .news-blog:hover .desb{
   bottom: 0px;
 }
@@ -797,11 +804,11 @@ footer h6 a{
   font-size: 24px !important;
 }
 .nav-ul li.active a{
-  color: var(--primary-main2);
+  color: var(--primary-main);
   font-weight: bold;
 }
 .nav-ul li:hover a{
-  color: var(--primary-main2);
+  color: var(--primary-main);
 } 
 .sec-news-des{
   padding-top: 100px;
@@ -873,9 +880,9 @@ footer h6 a{
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   border: none;
-  color: var(--primary-main2);
+  color: var(--primary-main);
   font-weight: bold;
-  border-bottom: 4px solid var(--primary-main2);
+  border-bottom: 4px solid var(--primary-main);
 }
 .nav-tabs .nav-link{
   color: #333333; 
@@ -886,10 +893,11 @@ footer h6 a{
   padding-right: 0px;
   margin-left: 15px;
   margin-right: 15px;
+  font-size: 18px;
 }
 .nav-tabs .nav-link:hover{
   border: white;
-  color: var(--primary-main2);
+  color: var(--primary-main);
   font-weight: 600;
   border-bottom: 4px solid white;
 }
@@ -971,7 +979,20 @@ footer h6 a{
   font-size: 18px;
   color: #333333; 
 }
-
+.backto{ 
+  color: var(--primary-main);
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backto i{ 
+  padding-right: 10px;
+}
+.nav.nav-tabs.mb-3{
+  padding-bottom: 40px !important;
+}
 
 
 /*  
