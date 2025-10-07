@@ -1054,7 +1054,7 @@ footer h6 a{
     object-fit: cover;
   }
   .sec-carousel::after { 
-    height: 80%; 
+    height: 100%; 
   } 
   .sec-carousel .carousel-caption { 
     height: 60%; 
@@ -1172,6 +1172,41 @@ footer h6 a{
   }
   .images-del{
     margin-left: 0px;
+  }
+  .sec-news-des {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sec-news-des h3 {
+    font-size: 26px; 
+  }
+  .share-bx { 
+    justify-content: start;
+  }
+  .share-bx img {
+    height: 32px; 
+  }
+  .sec5 { 
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .news-blog {
+    margin-bottom: 20px;
+  }
+  .sec-news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sec-news h4 {
+    font-size: 26px; 
+    margin-bottom: 20px; 
+  }
+  .tab-pane hr { 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+  }
+  .plx {
+    padding-left: 15px;
   }
 }
 @media only screen and (min-width: 768px) { /* PC */
