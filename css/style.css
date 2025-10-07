@@ -334,18 +334,22 @@ nav.navbar .container{
 }   
 .swiper-button-next:after{
   content: unset !important;
-}   
-.xquality {
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important; 
-  height: 320px;
+}   .xquality {
   position: relative;
+  height: 320px;
   overflow: hidden;
 }
- 
-.xquality::before,
-.xquality::after {
+
+.xquality-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* เหมือน background-size: cover */
+  object-position: center; /* เหมือน background-position: center */
+  display: block;
+}
+
+.overlay::before,
+.overlay::after {
   content: "";
   position: absolute;
   left: 0;
@@ -355,39 +359,35 @@ nav.navbar .container{
   transition: transform 0.5s ease;
   z-index: 4;
 }
- 
-.xquality::before {
+
+.overlay::before {
   top: 0;
   transform: translateY(0);
 }
-.xquality::after {
+.overlay::after {
   bottom: 0;
   transform: translateY(0);
-} 
-.xquality:hover::before {
+}
+.xquality:hover .overlay::before {
   transform: translateY(-100%);
 }
-.xquality:hover::after {
+.xquality:hover .overlay::after {
   transform: translateY(100%);
 }
 
-.xquality .in{ 
+.xquality .in { 
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0 !important;
-  left: 0 !important;
+  inset: 0; /* แทน top/bottom/left/right */
   display: flex;
-  z-index: 5; 
-  height: 300px;
-  text-align: center;
+  z-index: 5;
   justify-content: center;
   align-items: center;
   color: white;
-  width: 100%; 
   font-weight: bold;
   font-size: 20px;
-} 
+  text-align: center;
+}
+
 .sec5{
   background-color: var(--primary-main);
   padding-top: 50px;
@@ -408,41 +408,55 @@ nav.navbar .container{
   font-weight: bold;
   margin-bottom: 40px;
 }
-.news-blog{
-  height: 300px;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 100% !important; 
+
+
+.news-blog {
   position: relative;
+  height: 300px;
   overflow: hidden;
 }
-.news-blog .desb{
+
+.news-blog .news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+  display: block;
+  transition: transform 0.4s ease;
+} 
+.news-blog:hover .news-img {
+  transform: scale(1.05);
+}
+
+.news-blog .desb {
   position: absolute;
   bottom: -90px;
   width: 100%;
   background-color: rgba(0,0,0,0.7);
   font-size: 16px;
-  line-height: 1.5;        
-  color: #fff; 
+  line-height: 1.5;
+  color: #fff;
   padding: 10px 15px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;     
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: calc(1.5em * 3.5);   
-  transition: 0.3s; 
+  max-height: calc(1.5em * 3.5);
+  transition: bottom 0.3s ease;
+  z-index: 2;
 }
-.sec-news .news-blog .desb{ 
-  -webkit-line-clamp: 2;   /* จำนวนบรรทัดที่จะแสดง */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: calc(1.5em * 2.5);  
+
+/* ถ้าอยู่ใน .sec-news */
+.sec-news .news-blog .desb {
+  -webkit-line-clamp: 2;
+  max-height: calc(1.5em * 2.5);
 }
-.news-blog:hover .desb{
-  bottom: 0px;
+
+.news-blog:hover .desb {
+  bottom: 0;
 }
+
 .sec6{
   background-color: #e4e4e4;
   background-image: url(../images/helmet.png);
