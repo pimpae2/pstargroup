@@ -1007,7 +1007,9 @@ footer h6 a{
 .nav.nav-tabs.mb-3{
   padding-bottom: 40px !important;
 }
-
+.fluidx{
+  max-width: 400px;
+}
 
 /*  
   transition: 0.3s; 
