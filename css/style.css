@@ -301,8 +301,8 @@ nav.navbar .container{
   justify-content:center;
   align-items:center;  
   margin-right: 0px !important;
-  width: 20% !important;
-  height: 320px;
+  width: 28% !important;
+  height: 480px;
 }
 .swiper-button-next, .swiper-button-prev { 
   color:#000; 
@@ -336,10 +336,12 @@ nav.navbar .container{
   content: unset !important;
 }   .xquality {
   position: relative;
-  height: 320px;
+  height: 480px;
   overflow: hidden;
 }
-
+.mySwiper .swiper-wrapper{
+  justify-content: center;
+}
 .xquality-img {
   width: 100%;
   height: 100%;
