@@ -1012,6 +1012,25 @@ footer h6 a{
 .fluidx{
   max-width: 400px;
 }
+.des-in{
+  font-size: 20px;  
+  color: black;
+}
+
+.des-in h4{
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  color: var(--primary-main);
+}
+.des-in p{
+  font-size: 20px;  
+  color: black;
+}
+.des-in span{ 
+  color: var(--primary-main);
+}
+
 
 /*  
   transition: 0.3s; 
@@ -1211,6 +1230,12 @@ footer h6 a{
   }
   .plx {
     padding-left: 15px;
+  }
+  .or1{
+    order: 1;
+  }
+  .or2{
+    order: 2;
   }
 }
 @media only screen and (min-width: 768px) { /* PC */
