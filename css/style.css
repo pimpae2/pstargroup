@@ -925,7 +925,7 @@ footer h6 a{
 }
 .tab-pane hr{
   border-bottom: 1px solid var(--primary-main);
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
   opacity: 1;
 }
