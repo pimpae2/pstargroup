@@ -19,7 +19,7 @@ body{
   overflow-x: hidden !important;
 }     
 nav.navbar{
-  background-color: var(--primary-main2) !important;
+  background-color: var(--primary-main) !important;
   height: 60px;
 }  
 nav.navbar.addbig{ 
