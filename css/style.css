@@ -843,7 +843,7 @@ footer h6 a{
   align-content: baseline;
   color: #333333;
   font-size: 16px;
-  height: 40px;
+  height: 30px;
   font-weight: 500;
 }
 .share-bx h6{ 
@@ -925,7 +925,7 @@ footer h6 a{
 }
 .tab-pane hr{
   border-bottom: 1px solid var(--primary-main);
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 40px;
   opacity: 1;
 }
