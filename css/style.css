@@ -996,6 +996,7 @@ footer h6 a{
 .sec5 h6 a{
   font-size: 18px;
   color: #333333; 
+  line-height: 27px;
 }
 .backto{ 
   color: var(--primary-main);
