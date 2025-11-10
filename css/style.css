@@ -1057,6 +1057,11 @@ footer h6 a{
   .navbar-toggler{
     color: white;
     margin-top: -15px;
+    border: none;
+    outline: none;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none !important;
   }
   .navbar-collapse.show{
     background-color: var(--primary-main2);
