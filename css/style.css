@@ -1170,7 +1170,12 @@ footer h6 a{
   .addbig .navbar-toggler {
     color: white;
     margin-top: -35px;
-  } 
+  }    
+  nav.navbar.addbig .navbar-brand img{
+    height: 100px !important; 
+    margin-top: -25px;
+    margin-left: -10px;
+  }
   .addbig .navbar-brand img {
     height: 90px;
     margin-top: -35px;
@@ -1239,6 +1244,15 @@ footer h6 a{
   }
   .or2{
     order: 2;
+  }
+  .sec-social ul li{ 
+    display: block;
+    width: 100%;
+  }
+  .sec3 [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 @media only screen and (min-width: 768px) { /* PC */
