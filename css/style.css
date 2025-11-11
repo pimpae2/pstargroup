@@ -673,6 +673,7 @@ footer h6 span{
 }
 footer h6 a{  
   color: #999999;
+  font-size: 12px;
 }
 .sec-cover{
   background-position: center !important;
@@ -854,7 +855,7 @@ footer h6 a{
   text-transform: uppercase;
 }
 .share-bx img{
-  height: 40px;
+  height: 35px;
   margin-right: 5px;
   margin-top: -10px;
 }
