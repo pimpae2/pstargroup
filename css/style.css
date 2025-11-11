@@ -1033,7 +1033,7 @@ footer h6 a{
   color: black;
 }
 .des-in span{ 
-  color: var(--primary-main);
+  color: var(--primary-main) !important;
 }
 .nav-link  span.en{
   font-weight: 500;
