@@ -1274,6 +1274,10 @@ footer h6 a{
     transform: none !important;
     transition: none !important;
   }
+  
+  .sec-social ul li a{ 
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 768px) { /* PC */
   .pc-x{

@@ -295,6 +295,27 @@
 		}); 
 	</script>
 	
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		const toggler = document.querySelector(".navbar-toggler");
+		const icon = toggler.querySelector("i");
+		const navbarCollapse = document.getElementById("navbarNav");
+
+		toggler.addEventListener("click", function() {
+			// Toggle class 'show' ของเมนู
+			setTimeout(() => {
+			if (navbarCollapse.classList.contains("show")) {
+				icon.classList.remove("fa-times", "fa-xmark");
+				icon.classList.add("fa-bars");
+			} else {
+				icon.classList.remove("fa-bars");
+				icon.classList.add("fa-times");
+			}
+			}, 150); // delay เล็กน้อยให้ทัน animation
+		});
+		});
+	</script>
 	 
 </body>
 </html>
