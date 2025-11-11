@@ -1293,6 +1293,9 @@ footer h6 a{
     display: flex;
     justify-content: center;
   }
+  .text-vision h4 {
+    margin-top: -30px;
+  }
 }
 @media only screen and (min-width: 768px) { /* PC */
   .pc-x{
