@@ -1033,7 +1033,10 @@ footer h6 a{
 .des-in span{ 
   color: var(--primary-main);
 }
-
+.nav-link  span.en{
+  font-weight: 400;
+  font-size: 20px;
+}
 
 /*  
   transition: 0.3s; 
