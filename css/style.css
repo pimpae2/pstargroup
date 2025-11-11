@@ -740,6 +740,7 @@ footer h6 a{
   z-index: 4;
   text-align: center;
   width: 100%;
+  left: 0;
 }
 .text-vision h4{
   margin-top: -20px;
@@ -1274,8 +1275,7 @@ footer h6 a{
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
-  }
-  
+  }  
   .sec-social ul li a{ 
     font-size: 18px;
     font-weight: 500;
