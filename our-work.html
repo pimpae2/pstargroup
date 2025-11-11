@@ -817,24 +817,32 @@
 	</script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-		const toggler = document.querySelector(".navbar-toggler");
-		const icon = toggler.querySelector("i");
-		const navbarCollapse = document.getElementById("navbarNav");
+	document.addEventListener("DOMContentLoaded", function() {
+	const toggler = document.querySelector(".navbar-toggler");
+	const icon = toggler.querySelector("i");
+	const navbarCollapse = document.getElementById("navbarNav");
 
-		toggler.addEventListener("click", function() {
-			// Toggle class 'show' ของเมนู
-			setTimeout(() => {
-			if (navbarCollapse.classList.contains("show")) {
-				icon.classList.remove("fa-times", "fa-xmark");
-				icon.classList.add("fa-bars");
-			} else {
-				icon.classList.remove("fa-bars");
-				icon.classList.add("fa-times");
-			}
-			}, 150); // delay เล็กน้อยให้ทัน animation
+	// เมื่อเมนูถูก "เปิด" โดย Bootstrap
+	navbarCollapse.addEventListener('shown.bs.collapse', function() {
+		icon.classList.remove("fa-bars");
+		icon.classList.add("fa-times");
+	});
+
+	// เมื่อเมนูถูก "ปิด"
+	navbarCollapse.addEventListener('hidden.bs.collapse', function() {
+		icon.classList.remove("fa-times");
+		icon.classList.add("fa-bars");
+	});
+
+	// เมื่อคลิกเมนูภายใน ให้ปิดเมนูและเปลี่ยนไอคอนกลับด้วย
+	document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+		link.addEventListener("click", function() {
+		const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
+			|| new bootstrap.Collapse(navbarCollapse, { toggle: false });
+		bsCollapse.hide();
 		});
-		});
+	});
+	});
 	</script>
 	
 	 

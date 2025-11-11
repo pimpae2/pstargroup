@@ -1276,7 +1276,8 @@ footer h6 a{
   }
   
   .sec-social ul li a{ 
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
   }
 }
 @media only screen and (min-width: 768px) { /* PC */
