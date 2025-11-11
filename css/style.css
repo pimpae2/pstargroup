@@ -1035,6 +1035,9 @@ footer h6 a{
 .des-in span{ 
   color: var(--primary-main) !important;
 }
+.des-in span a{ 
+  color: var(--primary-main) !important;
+}
 .nav-link  span.en{
   font-weight: 500;
   font-size: 20px;
