@@ -1036,6 +1036,7 @@ footer h6 a{
 .nav-link  span.en{
   font-weight: 400;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 /*  
