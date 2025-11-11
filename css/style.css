@@ -1296,6 +1296,9 @@ footer h6 a{
   .text-vision h4 {
     margin-top: -30px;
   }
+  .mission li { 
+    font-size: 17px;
+  }
 }
 @media only screen and (min-width: 768px) { /* PC */
   .pc-x{
