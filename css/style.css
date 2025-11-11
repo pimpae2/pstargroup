@@ -1283,6 +1283,9 @@ footer h6 a{
   footer > .container > .row > div p{
     text-align: center;
   }
+  footer h4 {
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (min-width: 768px) { /* PC */
   .pc-x{
