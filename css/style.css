@@ -1043,6 +1043,27 @@ footer h6 a{
   font-size: 20px;
   text-transform: uppercase;
 }
+#xqualityCarousel .carousel-control-prev{
+  background-color: var(--primary-yellow);
+  width: 38px !important; 
+  height: 38px !important; 
+  opacity: 1;
+  border-radius: 100%;
+  top: calc(50% - 19px);
+  z-index: 33;
+  left: 10px;
+}
+#xqualityCarousel .carousel-control-next{
+  background-color: var(--primary-yellow);
+  width: 38px !important; 
+  height: 38px !important; 
+  opacity: 1;
+  border-radius: 100%;
+  top: calc(50% - 19px);
+  z-index: 33;
+  right: 10px;
+}
+
 
 /*  
   transition: 0.3s; 
@@ -1299,6 +1320,9 @@ footer h6 a{
   .text-vision h4 {
     margin-top: -30px;
   } 
+  .sec3 .des > div{
+    margin-top: 20px;
+  }
 }
 @media only screen and (min-width: 768px) { /* PC */
   .pc-x{

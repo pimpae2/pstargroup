@@ -240,7 +240,7 @@
 				<p class="th">Delivering quality  in every project</p>
 				<p class="en">ทุกโครงการคือ   ผลงานคุณภาพจากเรา</p>
 				
-				<div class="swiper mySwiper">
+				<div class="swiper mySwiper mb-x">
 					<div class="swiper-wrapper"> 
 						<div class="swiper-slide"> 
 							<a href="our-work.html#tabs1">
@@ -284,6 +284,53 @@
 					<div class="swiper-button-next"></div>
  
 					<!-- <div class="swiper-pagination"></div> -->
+				</div>
+
+				<div id="xqualityCarousel" class="carousel slide pc-x" data-bs-ride="carousel" data-bs-interval="10000" data-bs-wrap="false">
+					<div class="carousel-inner text-center">
+						<div class="carousel-item active">
+							<a href="our-work.html#tabs1">
+								<div class="xquality">
+									<img src="images/item01.png" class="d-block w-100 xquality-img" alt="โรงงานและคลังสินค้า Factory & Warehouse">
+									<div class="overlay"></div>
+									<div class="in">
+										<span class="th">อาคารพักอาศัยและสำนักงาน</span>
+										<span class="en">Residence & Office Building</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="our-work.html#tabs2">
+								<div class="xquality">
+									<img src="images/mmm2.png" class="d-block w-100 xquality-img" alt="อาคารสำนักงาน Office Building">
+									<div class="overlay"></div>
+									<div class="in">
+										<span class="th">โรงงาน <span class="pc-x"><br></span> โกดัง <span class="pc-x"><br></span>แท่นติดตั้งเครื่องจักร</span>
+										<span class="en">Factory <br> Warehouse <br>Machinery Foundation</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="our-work.html#tabs3">
+								<div class="xquality">
+									<img src="images/mmm3.jpg" class="d-block w-100 xquality-img" alt="โรงงานและคลังสินค้า Factory , Warehouse">
+									<div class="overlay"></div>
+									<div class="in">
+										<span class="th">อาคารทั่วไป<span class="pc-x"><br></span> และงานโยธา</span>
+										<span class="en">Building & Civil Work</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> 
+					<button class="carousel-control-prev" type="button" data-bs-target="#xqualityCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#xqualityCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</button> 
 				</div>
 				
 			</div>
@@ -338,7 +385,8 @@
 						<p class="th">Contact us</p>
 						<p class="en">ติดต่อเรา</p>
 						<address>
-							41/1 CLIX ZONE B, ชั้น 3 ห้อง 314, ซอย พระรามที่ 2 ซอย 54 แยก 4, <br> แสมดำ บางขุนเทียน กรุงเทพมหานคร 10150
+							<span class="th">41/1 CLIX ZONE B, ชั้น 3 ห้อง 314, ซอย พระรามที่ 2 ซอย 54 แยก 4, <br> แสมดำ บางขุนเทียน กรุงเทพมหานคร 10150</span>
+							<span class="en">41/1 CLIX Building, Zone B, 3rd Floor, Room No. 314, Soi Rama II 54, Lane 4, Samae Dam Subdistrict, Bang Khun Thian District, Bangkok 10150, Thailand</span>
 						</address>
 						<ul style="margin-top: 30px;">
 							<li>
@@ -526,7 +574,7 @@
 			});
 			}
 
-			setLanguage('th'); // default TH
+			setLanguage('th');  
 
 			document.querySelectorAll('.langx .nav-link').forEach(a => {
 			a.addEventListener('click', e => {
@@ -537,7 +585,7 @@
 
 		const myCarousel = document.querySelector('#demo');
 		const carousel = new bootstrap.Carousel(myCarousel, {
-		interval: 3000, // 3 วินาที
+		interval: 3000,  
 		ride: 'carousel'
 		});
 
@@ -547,7 +595,7 @@
 		once: false, 
 		});
 		const swiper = new Swiper('.mySwiper', {
-			slidesPerView: 3,       // แสดงทีละ 5
+			slidesPerView: 3,   
 			spaceBetween: 12,
 			navigation: {
 			nextEl: '.swiper-button-next',
@@ -571,7 +619,7 @@
 			successModal.show();
 			setTimeout(() => {
 			successModal.hide();
-			}, 5000); // 5 วินาที
+			}, 5000);  
 		});
 	</script>
 
@@ -580,20 +628,17 @@
 	const toggler = document.querySelector(".navbar-toggler");
 	const icon = toggler.querySelector("i");
 	const navbarCollapse = document.getElementById("navbarNav");
-
-	// เมื่อเมนูถูก "เปิด" โดย Bootstrap
+ 
 	navbarCollapse.addEventListener('shown.bs.collapse', function() {
 		icon.classList.remove("fa-bars");
 		icon.classList.add("fa-times");
 	});
-
-	// เมื่อเมนูถูก "ปิด"
+ 
 	navbarCollapse.addEventListener('hidden.bs.collapse', function() {
 		icon.classList.remove("fa-times");
 		icon.classList.add("fa-bars");
 	});
-
-	// เมื่อคลิกเมนูภายใน ให้ปิดเมนูและเปลี่ยนไอคอนกลับด้วย
+ 
 	document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
 		link.addEventListener("click", function() {
 		const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
@@ -606,7 +651,31 @@
 
 
 
-	
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+	const carousel = document.querySelector('#xqualityCarousel');
+	const prevBtn = carousel.querySelector('.carousel-control-prev');
+	const nextBtn = carousel.querySelector('.carousel-control-next');
+	const items = carousel.querySelectorAll('.carousel-item');
+	const total = items.length;
+
+	const bsCarousel = new bootstrap.Carousel(carousel, {
+		interval: 10000,
+		wrap: false
+	});
+
+	// อัปเดตสถานะปุ่มทุกครั้งที่ slide เปลี่ยน
+	carousel.addEventListener('slid.bs.carousel', function (e) {
+		const index = e.to;
+		prevBtn.style.display = index === 0 ? 'none' : 'flex';
+		nextBtn.style.display = index === total - 1 ? 'none' : 'flex';
+	});
+
+	// ซ่อน prev ตอนเริ่มต้น
+	prevBtn.style.display = 'none';
+	});
+	</script>
+
 	 
 </body>
 </html>
