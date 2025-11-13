@@ -1332,7 +1332,12 @@ footer h6 a{
   } 
   .sec3 .des > div{
     margin-top: 20px;
+  } 
+  .news-blog .desb { 
+    overflow: visible; 
+    bottom: 0;
   }
+
 }
 @media only screen and (min-width: 768px) { /* PC */
   .pc-x{
