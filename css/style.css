@@ -1357,7 +1357,12 @@ footer h6 a{
     overflow: visible; 
     bottom: 0;
   }
-
+  .h5x{
+    display: block;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 768px) { /* PC */
   .pc-x{
