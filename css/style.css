@@ -587,6 +587,7 @@ address{
 }
 .mmap{
   position: relative;
+  margin-bottom: 25px;
 }
 .mmap::after{
   content: "";
