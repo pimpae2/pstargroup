@@ -1015,7 +1015,7 @@ footer h6 a{
   padding-bottom: 40px !important;
 }
 .fluidx{
-  max-width: 400px;
+  max-width: 380px;
 }
 .des-in{
   font-size: 16px;  
@@ -1310,6 +1310,26 @@ footer h6 a{
     transform: none !important;
     transition: none !important;
   }  
+  #vision [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  } 
+  #mission [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  } 
+  #team [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  } 
+  .sec-ab1 [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  } 
   .sec-social ul li a{ 
     font-size: 18px;
     font-weight: 500;
