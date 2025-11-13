@@ -1064,6 +1064,16 @@ footer h6 a{
   right: 10px;
 }
 
+/* ปิด animation ตอนเปิด/ปิดเมนู navbar */
+.collapse {
+  transition: none !important;
+}
+
+.collapsing {
+  transition: none !important;
+  height: auto !important;
+  display: block !important;
+}
 
 /*  
   transition: 0.3s; 
