@@ -709,7 +709,7 @@ footer h6 a{
   padding-bottom: 50px;
   background-position: top right !important;
   background-repeat: no-repeat !important;
-  background-size: 100% !important;  
+  background-size: 100% auto !important;  
   background-image: url(../images/planx.png); 
 }
 .sec-ab1 h4{  
@@ -1369,4 +1369,44 @@ footer h6 a{
   .pc-x{
     display: none !important;
   }      
-}      
+}     
+@media only screen and (width: 1366px) { /* PC */
+  .sec-cover{ 
+    margin-top: 37px;
+  }      
+}    
+@media only screen and (width: 1180px) { /* PC */
+  .sec-cover{ 
+    margin-top: 22px;
+  }     
+  .navbar-brand{
+    margin-top: -35px;
+  }
+  .navbar-brand img{
+    height: 100px;
+  }
+  .navbar-toggler{
+    color: #fff;
+    margin-top: -25px;
+  }
+}    
+@media only screen and (min-width: 1025px) and (max-width: 1800px) { 
+  .sec-cover{ 
+    margin-top: 28px;
+  }      
+}   
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {   
+  .sec-cover{ 
+    margin-top: 22px;
+  }     
+  .navbar-brand{
+    margin-top: -35px;
+  }
+  .navbar-brand img{
+    height: 100px;
+  }
+  .navbar-toggler{
+    color: #fff;
+    margin-top: -25px;
+  }  
+}   
